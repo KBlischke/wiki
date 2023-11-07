@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Exists
+{% endblock %}
+
+{% block body %}
+    <h1>Entry Does Exist</h1>
+
+    The entry "{{ title }}" does already exist. <a href="{% url 'encyclopedia:entry' title=title %}">See entry</a> or <a href="{% url 'encyclopedia:create' %}">try again</a>.
+
+{% endblock %}

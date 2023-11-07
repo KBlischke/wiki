@@ -1,0 +1,12 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Not Found
+{% endblock %}
+
+{% block body %}
+    <h1>Not Found</h1>
+
+    The requested entry "{{ title }}" couldn't be found. <a href="{% url 'encyclopedia:index' %}">Try again</a>.
+
+{% endblock %}
